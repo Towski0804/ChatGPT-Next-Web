@@ -21,6 +21,15 @@
   @include container();
 }
 
+.ICP {
+  bottom: 2px;
+  right: 2px;
+  position: fixed;
+  text-decoration: none;
+  color: #ccc;
+  font-size: 0.8em;
+}
+
 @media only screen and (min-width: 600px) {
   .tight-container {
     --window-width: 100vw;
@@ -130,6 +139,15 @@
 
   .mobile {
     display: block;
+  }
+
+  .ICP {
+    bottom: -100%;
+    right: 2px;
+    position: absolute;
+    text-decoration: none;
+    color: #ccc;
+    font-size: 0.8em;
   }
 }
 
@@ -337,13 +355,4 @@
 
 .rtl-screen {
   direction: rtl;
-}
-
-.ICP {
-  bottom: 2px;
-  right: 2px;
-  position: fixed;
-  text-decoration: none;
-  color: #ccc;
-  font-size: 0.8em;
 }
